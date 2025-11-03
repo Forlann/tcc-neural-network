@@ -1,0 +1,7 @@
+# ignore all logs
+__pycache__/
+.venv/
+Datasetsall/
+Datasetall.zip
+YoloDataset_OLD.py
+mainOLD.py
