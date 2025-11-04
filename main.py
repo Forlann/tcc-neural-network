@@ -50,13 +50,12 @@ def get_detection_model(num_classes):
 	# 3. Cria um RoI Pooler para UM feature map
 	#    Ele vai extrair features do map '0' (o único que nosso backbone retorna)
 	roi_pooler = MultiScaleRoIAlign(
-		featmap_names=['0'], # <-- DEVE SER IGUAL à chave do OrderedDict do backbone
+		featmap_names=['0'],
 		output_size=7,       # Tamanho padrão do RoI pool
 		sampling_ratio=2
 	)
 
 	# 4. Cria o modelo Faster R-CNN
-	#    AGORA, passamos o backbone, o anchor_generator e o roi_pooler
 	model = FasterRCNN(
 		backbone,
 		num_classes=91, # Padrão COCO, vamos trocar a cabeça abaixo
@@ -64,8 +63,6 @@ def get_detection_model(num_classes):
 		box_roi_pool=roi_pooler               # <-- Nosso RoI pooler customizado
 	)
 	
-	# --- !! FIM DA CORREÇÃO DE ARQUITETURA !! ---
-
 	# 5. Substitui a "cabeça" (o classificador)
 	in_features = model.roi_heads.box_predictor.cls_score.in_features
 	
@@ -86,11 +83,11 @@ VAL_IMG_DIR = "D:/dev/faculdade/TCC/REDE_NEURAL/v0.2/Datasetsall/Datasetsall - C
 VAL_LBL_DIR = "D:/dev/faculdade/TCC/REDE_NEURAL/v0.2/Datasetsall/Datasetsall - Copia/valid/labels"
 
 # --- Parâmetros de Treinamento ---
-NUM_CLASSES = 11
-BATCH_SIZE = 4
+NUM_CLASSES = 6
+BATCH_SIZE = 8
 # Vamos voltar para 100 épocas, 150 pode ser muito para começar
-NUM_EPOCHS = 50 
-LEARNING_RATE = 0.001
+NUM_EPOCHS = 50
+LEARNING_RATE = 0.0001
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 print(f"Usando dispositivo: {device}")

@@ -1,8 +1,5 @@
 import torch
 import torch.nn as nn
-
-# --- IMPORTAÇÃO ADICIONADA ---
-
 from collections import OrderedDict
 
 
@@ -11,9 +8,6 @@ class CustomBackbone(nn.Module):
     def __init__(self):
 
         super(CustomBackbone, self).__init__()
-
-        # (A definição da CNN continua a mesma)
-
         self.features = nn.Sequential(
 
             # Input: (B, 3, 416, 416)

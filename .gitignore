@@ -1,5 +1,6 @@
 # ignore all logs
 __pycache__/
+OLD/
 .venv/
 Datasetsall/
 Datasetall.zip
