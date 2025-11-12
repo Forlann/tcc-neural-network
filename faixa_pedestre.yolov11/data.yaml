@@ -1,0 +1,13 @@
+train: ../train/images
+val: ../valid/images
+test: ../test/images
+
+nc: 1
+names: ['faixa_pedestre']
+
+roboflow:
+  workspace: crosswalk-fx95c
+  project: crosswalk_segmentation
+  version: 1
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/crosswalk-fx95c/crosswalk_segmentation/dataset/1

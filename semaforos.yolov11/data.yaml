@@ -1,0 +1,13 @@
+train: ../train/images
+val: ../valid/images
+test: ../test/images
+
+nc: 3
+names: ['green', 'red', 'yellow']
+
+roboflow:
+  workspace: yololearning-nuega
+  project: traffic-lights-yulcv
+  version: 1
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/yololearning-nuega/traffic-lights-yulcv/dataset/1

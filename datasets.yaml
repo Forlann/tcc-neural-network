@@ -1,0 +1,17 @@
+train:
+  - C:/Users/leonardo/Desktop\tcc/Datasetsall\train/images
+val:
+  - C:/Users/leonardo/Desktop\tcc/Datasetsall\valid/images
+
+test:
+  - C:/Users/leonardo/Desktop\tcc/Datasetsall\test/images
+
+nc: 6
+
+names:
+  0: faixa de pedestres
+  1: veiculos
+  2: green-light
+  3: red-light
+  4: yellow-light
+  5: pessoas

@@ -1,0 +1,13 @@
+train: ../train/images
+val: ../valid/images
+test: ../test/images
+
+nc: 30
+names: ['-', '- annotate- and create datasets', '- collaborate with your team on computer vision projects', '- collect - organize images', '- understand and search unstructured image data', '0', '1', '2', '3', '4', '5', '6', '7', 'Roboflow is an end-to-end computer vision platform that helps you', 'This dataset was exported via roboflow.com on October 16- 2023 at 11-28 AM GMT', 'bus', 'bus_07', 'bus_27', 'bus_46', 'bus_55A', 'bus_55B', 'car', 'car_models - v1 2023-10-05 3-03pm', 'cars', 'empty road', 'motorbike', 'motorcycle', 'truck', 'van', 'vehicle']
+
+roboflow:
+  workspace: codee-p31ru
+  project: vehicles-jrny7
+  version: 1
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/codee-p31ru/vehicles-jrny7/dataset/1

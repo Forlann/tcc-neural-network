@@ -1,0 +1,13 @@
+train: ../train/images
+val: ../valid/images
+test: ../test/images
+
+nc: 1
+names: ['pessoas']
+
+roboflow:
+  workspace: people-detection-mgyan
+  project: people-detection-rsdmo
+  version: 1
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/people-detection-mgyan/people-detection-rsdmo/dataset/1
