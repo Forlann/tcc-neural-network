@@ -35,7 +35,7 @@ CLASS_NAMES = [
 # =============================================================
 # CARREGAR O MODELO
 # =============================================================
-model = create_ssd_model(num_classes=8)  # 7 classes + background
+model = create_ssd_model(num_classes=7)  # 6 classes + background
 model.load_state_dict(torch.load(MODEL_PATH, map_location=DEVICE))
 model.to(DEVICE)
 model.eval()
