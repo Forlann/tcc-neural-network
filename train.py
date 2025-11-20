@@ -16,7 +16,7 @@ from dataset import COCODataset, get_transform  # usa o dataset COCO agora
 # CONFIGURAÇÕES GERAIS
 # =============================================================
 DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-NUM_CLASSES = 7 + 1  # 7 classes + 1 background
+NUM_CLASSES = 7  # 6 classes + 1 background
 BATCH_SIZE = 4
 EPOCHS = 1
 LEARNING_RATE = 1e-4
