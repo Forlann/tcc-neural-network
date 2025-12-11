@@ -21,7 +21,7 @@ def main():
 
     model.train(
         data=data_yaml,
-        epochs=15,
+        epochs=1,
         imgsz=640,
         project="runs/train",
         name="yolo_multiclass",
